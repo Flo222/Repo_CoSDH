@@ -46,6 +46,25 @@ Note that
 
 Download: [Google Drive](https://drive.google.com/drive/folders/1T3LLCn257Gynoqmm_HeXJu3Q8PBYGHfL?usp=sharing)
 
+## Training and Inference
+
+**Train**
+
+```bash
+torchrun --master_port 22334 --nproc_per_node=4 \
+opencood/tools/train_ddp.py \
+-y opencood/hypes_yaml/opv2v/lidar_only/pointpillar_cosdh.yaml
+```
+
+**Inference**
+
+```bash
+# intermediate–late hybrid fusion 
+python opencood/tools/inference.py --model_dir opencood/logs/<ckpt-dir> --fusion_method intermediatelate
+# intermediate fusion only
+python opencood/tools/inference.py --model_dir opencood/logs/<ckpt-dir> --fusion_method intermediate
+```
+
 ## Citation
 
 Please cite our work if you find it useful.
