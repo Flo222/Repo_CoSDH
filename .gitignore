@@ -142,5 +142,8 @@ opencood/logs
 
 scripts.txt
 temp.txt
+<<<<<<< HEAD
 
 .vscode/
+=======
+>>>>>>> 503d13a113ad36a9896ba04c32711d282c1d7683

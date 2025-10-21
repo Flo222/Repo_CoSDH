@@ -23,7 +23,10 @@ dataset
 ├── my_dair_v2x 
 │   └── v2x_c
 ├── OPV2V
+<<<<<<< HEAD
 │   ├── additional
+=======
+>>>>>>> 503d13a113ad36a9896ba04c32711d282c1d7683
 │   ├── test
 │   ├── train
 │   └── validate
@@ -45,6 +48,7 @@ Note that
 ## Checkpoints
 
 Download: [Google Drive](https://drive.google.com/drive/folders/1T3LLCn257Gynoqmm_HeXJu3Q8PBYGHfL?usp=sharing)
+<<<<<<< HEAD
 
 ## Training and Inference
 
@@ -64,6 +68,8 @@ python opencood/tools/inference.py --model_dir opencood/logs/<ckpt-dir> --fusion
 # intermediate fusion only
 python opencood/tools/inference.py --model_dir opencood/logs/<ckpt-dir> --fusion_method intermediate
 ```
+=======
+>>>>>>> 503d13a113ad36a9896ba04c32711d282c1d7683
 
 ## Citation
 
